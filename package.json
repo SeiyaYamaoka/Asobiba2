@@ -1,0 +1,23 @@
+{
+  "name": "asobiba2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx vite",
+    "build": "vite build && cp -rp src/samples dist",
+    "preview": "vite preview",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@popperjs/core": "^2.11.8",
+    "bootstrap": "^5.3.3",
+    "three": "^0.165.0"
+  },
+  "devDependencies": {
+    "sass": "^1.77.6",
+    "vite": "^5.3.1"
+  }
+}
