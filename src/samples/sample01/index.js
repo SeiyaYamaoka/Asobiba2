@@ -2,6 +2,8 @@ import * as THREE from "three";
 import { OrbitControls } from "three/addons/controls/OrbitControls.js";
 import { GLTFLoader } from "three/addons/loaders/GLTFLoader.js";
 
+import glbModel from "../../assets/dol2.glb?url";
+
 // 幅、高さ取得
 const width = window.innerWidth;
 const height = window.innerHeight;
@@ -37,7 +39,7 @@ const loader = new GLTFLoader();
 const clock = new THREE.Clock();
 let mixer;
 
-loader.load("dol2.glb", (object) => {
+loader.load(glbModel, (object) => {
   // 読み込み後に3D空間に追加
   // object.scene.rotation.set(-Math.PI / 2, 0, 0);
   object.scene.position.set(0, 1, 0);

@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "npx vite",
-    "build": "vite build && cp -rp src/samples dist",
+    "build": "vite build && cp -rp src/samples/sample02 dist/samples",
     "preview": "vite preview",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

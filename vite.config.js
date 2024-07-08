@@ -5,6 +5,7 @@ const root = resolve(__dirname, "src");
 const outDir = resolve(__dirname, "dist");
 
 export default defineConfig({
+  base: "/Asobiba2/",
   root,
   build: {
     outDir,
@@ -12,6 +13,7 @@ export default defineConfig({
       input: {
         index: resolve(root, "index.html"),
         samples: resolve(root, "samples.html"),
+        sample01: resolve(root, "samples", "sample01", "index.html"),
       },
     },
   },
