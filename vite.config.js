@@ -2,7 +2,7 @@ import { resolve } from "path";
 import { defineConfig } from "vite";
 
 const root = resolve(__dirname, "src");
-const outDir = resolve(__dirname, "dist");
+const outDir = resolve(__dirname, "docs");
 
 export default defineConfig({
   base: "/Asobiba2/",
@@ -13,7 +13,7 @@ export default defineConfig({
       input: {
         index: resolve(root, "index.html"),
         samples: resolve(root, "samples.html"),
-        sample01: resolve(root, "samples", "sample01", "index.html"),
+        sample01: resolve(root, "samples", "threejs", "sample01", "index.html"),
       },
     },
   },
